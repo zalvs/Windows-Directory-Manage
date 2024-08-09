@@ -26,7 +26,7 @@ Windows Directory Manager requires [Python](https://www.python.org/) 3.x to run.
 Clone the repository, navigate to the directory, and run the script:
 
 ```sh
-git clone https://github.com/yourusername/windows-dir-manager.git
+git clone https://github.com/Zapseco/windows-dir-manager.git
 cd windows-dir-manager
 python directory_manager.py
 ```
