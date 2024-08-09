@@ -1,39 +1,65 @@
-This repository contains a Python script designed to simplify the process of creating and managing directories on a Windows operating system. The script leverages Python's subprocess module to interact with the Windows command line, allowing for seamless creation and listing of directories directly from the script. It's particularly useful for automating file management tasks on Windows systems.
+# Windows Directory Manager
 
-Features:
-Create Directories: The script checks for the existence of a specified directory and creates it if it doesn't already exist. This is particularly useful for automating tasks that require setting up specific directory structures.
+Windows Directory Manager is a Python script designed to streamline the process of creating and managing directories on a Windows operating system. This script is particularly useful for system administrators and developers who need to automate file management tasks on Windows systems.
 
-List Directory Contents: After creating a directory, the script can list all files and subdirectories within it, providing a quick overview of the directory's contents.
+- Create directories on a specified path
+- List the contents of directories
+- Robust error handling to manage potential issues during execution
 
-Error Handling: The script includes robust error handling to manage issues such as attempting to create an already existing directory, or encountering unexpected errors during execution. This ensures that the script runs smoothly and provides clear feedback in case of any issues.
+## Features
 
-No External Dependencies: The script relies on Python's standard libraries, specifically the subprocess module, making it lightweight and easy to run without requiring additional installations.
+- **Create Directories**: The script checks whether a specified directory exists and creates it if it doesn't. This feature is handy for setting up directory structures as part of an automated workflow.
+- **List Directory Contents**: After creating a directory, the script lists all files and subdirectories within it, providing an easy way to verify the contents.
+- **Error Handling**: Includes comprehensive error handling to manage issues such as permissions errors or other unexpected exceptions.
 
-Use Cases:
-Automated Setup Scripts: Use this script as part of a larger automation process to set up directory structures on new machines or within projects.
+## Tech
 
-File Management: Automate the creation and organization of directories for different tasks, such as sorting files into specific folders or setting up directories for data storage.
+Windows Directory Manager is built using Python's standard libraries, ensuring that it is lightweight and easy to run without requiring additional dependencies.
 
-System Administration: Helps in managing directories on Windows servers or workstations, providing an easy way to script repetitive file system tasks.
+- [Python 3.x] - A versatile and powerful programming language.
+- [subprocess] - Python's built-in library for running system commands.
 
-Getting Started:
-Clone the Repository:
+## Installation
 
-sh
-Copiar código
+Windows Directory Manager requires [Python](https://www.python.org/) 3.x to run.
+
+Clone the repository, navigate to the directory, and run the script:
+
+```sh
 git clone https://github.com/yourusername/windows-dir-manager.git
 cd windows-dir-manager
-Run the Script:
-Modify the caminho_base and nome_pasta variables in the script to specify your desired directory path and name, then execute the script.
-
-python
-Copiar código
 python directory_manager.py
-Customize:
-You can easily extend this script by adding more functionality, such as deleting directories, moving files, or integrating it into larger automation workflows.
+```
 
-Requirements:
-Python 3.x
-Windows OS
-Contributing:
-Contributions are welcome! Feel free to submit pull requests with enhancements, bug fixes, or additional features.
+## Usage
+
+To use the script, simply specify the base path where you want to create the directory and the name of the directory you want to create:
+
+```python
+caminho_base = r"H:\FIAP\alberico"
+nome_pasta = "ExemploPasta"
+criar_pasta_e_listar_conteudo(caminho_base, nome_pasta)
+```
+
+## Development
+
+Want to contribute? Great!
+
+You can contribute by forking the repository, making changes, and submitting a pull request.
+
+### To make changes:
+
+Open your favorite terminal and run these commands:
+
+```sh
+# To run the script
+python directory_manager.py
+```
+
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+   [Python 3.x]: <https://www.python.org/>
+   [subprocess]: <https://docs.python.org/3/library/subprocess.html>
+
