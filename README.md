@@ -53,7 +53,7 @@ Open your favorite terminal and run these commands:
 
 ```sh
 # To run the script
-python directory_manager.py
+python manager.py
 ```
 
 
